@@ -3,7 +3,15 @@
     <string name="app_name">LocalizedAppCherepanov</string>
 
     <string name="greeting">世界はこんにちは!</string>
-    <string name="switch_lang_btn">スイッチ!</string>
+    <string name="switch_lang_btn">言語を変える!</string>
+    <string name="switch_color_btn">色を変える!</string>
+
+    <string-array name="colors">
+        <item>デフォルト</item>
+        <item>緑色</item>
+        <item>黒い</item>
+        <item>青</item>
+    </string-array>
 
     <string-array name="language_selector">
         <item>English</item>

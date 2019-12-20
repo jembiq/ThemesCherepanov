@@ -7,5 +7,30 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    
+    <!-- Custom themes -->
+    <style name="ThemeGreen" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryGreen</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDarkGreen</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+        <item name="android:textColor">@color/colorTextGreen</item>
+        <item name="android:background">@color/colorPrimaryGreen</item>
+    </style>
+
+    <style name="ThemeBlack" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorButtonNormal">@color/colorPrimaryUltraBlack</item>
+        <item name="colorAccent">@color/colorAccentBlack</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:background">@color/colorPrimaryBlack</item>
+    </style>
+
+    <style name="ThemeBlue" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+        <item name="android:textColor">@color/colorTextBlue</item>
+        <item name="android:background">@color/colorPrimaryBlue</item>
+    </style>
 
 </resources>

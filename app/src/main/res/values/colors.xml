@@ -3,4 +3,23 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!-- Custom colors -->
+    <!-- Green -->
+    <color name="colorPrimaryGreen">#2E8B57</color>
+    <color name="colorPrimaryDarkGreen">#006400</color>
+    <color name="colorAccentGreen">#6B8E23</color>
+    <color name="colorTextGreen">#0E490E</color>
+
+    <!-- Black -->
+    <color name="colorPrimaryBlack">#FF5C5C5C</color>
+    <color name="colorPrimaryUltraBlack">#000000</color>
+    <color name="colorAccentBlack">#332F2F</color>
+    <color name="colorTextBlack">#FFFFFF</color>
+
+    <!-- Blue -->
+    <color name="colorPrimaryBlue">#758BF5</color>
+    <color name="colorPrimaryDarkBlue">#0D4792</color>
+    <color name="colorAccentBlue">#4700FF</color>
+    <color name="colorTextBlue">#001D29</color>
 </resources>
