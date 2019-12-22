@@ -1,7 +1,6 @@
 package com.example.localizedappcherepanov;
 
 import android.app.Activity;
-import android.content.Intent;
 
 public class Utils {
     private static int sTheme;

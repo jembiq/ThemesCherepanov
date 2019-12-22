@@ -5,22 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.LocaleList;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static Spinner mLocaleSpinner;
-    private static Spinner mThemeSwitchSpinner;
-    private static Button mSwitchLangBtn;
-    private static Button mSwitchColorBtn;
+    private Spinner mLocaleSpinner;
+    private Spinner mThemeSwitchSpinner;
+    private Button mSwitchLangBtn;
+    private Button mSwitchColorBtn;
     private static Locale localeRU = new Locale("ru");
     private static Locale localeEN = new Locale("en");
     private static Locale localeJP = new Locale("ja");
@@ -41,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         mThemeSwitchSpinner = findViewById(R.id.themeSwitchSpinner);
         initLocaleSpinner();
         initThemeSwitchSpinner();
+        switchThemeBtnAction();
+        switchLanguageBtnAction();
     }
 
     private void initLocaleSpinner() {
@@ -88,39 +88,36 @@ public class MainActivity extends AppCompatActivity {
         switch (language) {
             case "Русский" :
                 config.setLocale(localeRU);
-                switchLanguageBtnAction();
                 break;
 
             case "English" :
                 config.setLocale(localeEN);
-                switchLanguageBtnAction();
                 break;
 
             case "日本語" :
                 config.setLocale(localeJP);
-                switchLanguageBtnAction();
-
-            default:break;
+                break;
         }
     }
 
     private void changeColor(int position) {
+        final int THEME_DEFAULT = 0;
+        final int THEME_GREEN = 1;
+        final int THEME_BLACK = 2;
+        final int THEME_BLUE = 3;
+
         switch (position) {
-            case 0 :
+            case THEME_DEFAULT :
                 Utils.changeToTheme(Utils.THEME_DEFAULT);
-                switchThemeBtnAction();
                 break;
-            case 1 :
+            case THEME_GREEN :
                 Utils.changeToTheme(Utils.THEME_GREEN);
-                switchThemeBtnAction();
                 break;
-            case 2 :
+            case THEME_BLACK :
                 Utils.changeToTheme(Utils.THEME_BLACK);
-                switchThemeBtnAction();
                 break;
-            case 3 :
+            case THEME_BLUE :
                 Utils.changeToTheme(Utils.THEME_BLUE);
-                switchThemeBtnAction();
                 break;
             default:
         }
